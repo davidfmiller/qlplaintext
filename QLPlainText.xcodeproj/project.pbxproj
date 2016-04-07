@@ -7,17 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		552E0D001CB606F300F87217 /* GenerateThumbnailForURL.c in Sources */ = {isa = PBXBuildFile; fileRef = 552E0CFF1CB606F300F87217 /* GenerateThumbnailForURL.c */; };
-		552E0D021CB606F300F87217 /* GeneratePreviewForURL.c in Sources */ = {isa = PBXBuildFile; fileRef = 552E0D011CB606F300F87217 /* GeneratePreviewForURL.c */; };
+		552E0D001CB606F300F87217 /* GenerateThumbnailForURL.m in Sources */ = {isa = PBXBuildFile; fileRef = 552E0CFF1CB606F300F87217 /* GenerateThumbnailForURL.m */; };
+		552E0D021CB606F300F87217 /* GeneratePreviewForURL.m in Sources */ = {isa = PBXBuildFile; fileRef = 552E0D011CB606F300F87217 /* GeneratePreviewForURL.m */; };
 		552E0D041CB606F300F87217 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 552E0D031CB606F300F87217 /* main.c */; };
+		552E0D0D1CB60E3D00F87217 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 552E0D0C1CB60E3D00F87217 /* Foundation.framework */; };
+		552E0D121CB61B1C00F87217 /* FileAttributes.h in Headers */ = {isa = PBXBuildFile; fileRef = 552E0D101CB61B1C00F87217 /* FileAttributes.h */; };
+		552E0D131CB61B1C00F87217 /* FileAttributes.m in Sources */ = {isa = PBXBuildFile; fileRef = 552E0D111CB61B1C00F87217 /* FileAttributes.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		552E0CFC1CB606F300F87217 /* QLPlainText.qlgenerator */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QLPlainText.qlgenerator; sourceTree = BUILT_PRODUCTS_DIR; };
-		552E0CFF1CB606F300F87217 /* GenerateThumbnailForURL.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = GenerateThumbnailForURL.c; sourceTree = "<group>"; };
-		552E0D011CB606F300F87217 /* GeneratePreviewForURL.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = GeneratePreviewForURL.c; sourceTree = "<group>"; };
+		552E0CFF1CB606F300F87217 /* GenerateThumbnailForURL.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GenerateThumbnailForURL.m; sourceTree = "<group>"; };
+		552E0D011CB606F300F87217 /* GeneratePreviewForURL.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GeneratePreviewForURL.m; sourceTree = "<group>"; };
 		552E0D031CB606F300F87217 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		552E0D051CB606F300F87217 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		552E0D0B1CB6083600F87217 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		552E0D0C1CB60E3D00F87217 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		552E0D101CB61B1C00F87217 /* FileAttributes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileAttributes.h; sourceTree = "<group>"; };
+		552E0D111CB61B1C00F87217 /* FileAttributes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileAttributes.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -25,6 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				552E0D0D1CB60E3D00F87217 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -34,6 +42,8 @@
 		552E0CF21CB606F300F87217 = {
 			isa = PBXGroup;
 			children = (
+				552E0D0B1CB6083600F87217 /* README.md */,
+				552E0D0C1CB60E3D00F87217 /* Foundation.framework */,
 				552E0CFE1CB606F300F87217 /* QLPlainText */,
 				552E0CFD1CB606F300F87217 /* Products */,
 			);
@@ -50,10 +60,12 @@
 		552E0CFE1CB606F300F87217 /* QLPlainText */ = {
 			isa = PBXGroup;
 			children = (
-				552E0CFF1CB606F300F87217 /* GenerateThumbnailForURL.c */,
-				552E0D011CB606F300F87217 /* GeneratePreviewForURL.c */,
+				552E0CFF1CB606F300F87217 /* GenerateThumbnailForURL.m */,
+				552E0D011CB606F300F87217 /* GeneratePreviewForURL.m */,
 				552E0D031CB606F300F87217 /* main.c */,
 				552E0D051CB606F300F87217 /* Info.plist */,
+				552E0D101CB61B1C00F87217 /* FileAttributes.h */,
+				552E0D111CB61B1C00F87217 /* FileAttributes.m */,
 			);
 			path = QLPlainText;
 			sourceTree = "<group>";
@@ -65,6 +77,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				552E0D121CB61B1C00F87217 /* FileAttributes.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +92,7 @@
 				552E0CF81CB606F300F87217 /* Frameworks */,
 				552E0CF91CB606F300F87217 /* Headers */,
 				552E0CFA1CB606F300F87217 /* Resources */,
+				552E0D0F1CB60FE100F87217 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -130,13 +144,30 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		552E0D0F1CB60FE100F87217 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "open ~/Library/QuickLook\nrm -Rf ~/Library/QuickLook/QLPlainText.qlgenerator\ncp -R ${BUILT_PRODUCTS_DIR}/QLPlainText.qlgenerator ~/Library/QuickLook\n\nqlmanage -r # reload generators\nqlmanage -p ${SRCROOT}/samples/Localizable.strings\n\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		552E0CF71CB606F300F87217 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				552E0D001CB606F300F87217 /* GenerateThumbnailForURL.c in Sources */,
-				552E0D021CB606F300F87217 /* GeneratePreviewForURL.c in Sources */,
+				552E0D001CB606F300F87217 /* GenerateThumbnailForURL.m in Sources */,
+				552E0D131CB61B1C00F87217 /* FileAttributes.m in Sources */,
+				552E0D021CB606F300F87217 /* GeneratePreviewForURL.m in Sources */,
 				552E0D041CB606F300F87217 /* main.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -268,6 +299,7 @@
 				552E0D0A1CB606F300F87217 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
