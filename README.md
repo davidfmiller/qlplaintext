@@ -5,7 +5,7 @@
 
 
 ```
-file --mime --brief ~/Documents/git/QLPlaintext/samples/Localizable.strings`
+file --mime --brief ~/Documents/git/QLPlaintext/samples/Localizable.strings
 
 qlmanage -r
 qlmanage -m | ack fit
